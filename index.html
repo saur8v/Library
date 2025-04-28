@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Library</title>
+</head>
+<body>
+    <nav class="navbar">
+          <a class="navbar-brand" href="./index.html"><h2>My Library</h2></a>
+      </nav>
+      <div class="OuterContainer">
+      <button class="btn btn-primary" id="new-book-btn">Add Book</button>
+        <form class="container formContainer" id="form-Container">
+            <div class="mb-3">
+                <label for="Title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="formGroupExampleInput title" placeholder="Title">
+            </div>
+            <div class="mb-3">
+                <label for="Author" class="form-label">Author</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2 author" placeholder="Author">
+            </div>
+            <div class="mb-3">
+                <label for="Pages" class="form-label">Number of Pages</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2 pages" placeholder="Number of Pages">
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" value="Read" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-success" for="btnradio1">Read</label>
+            
+                <input type="radio" class="btn-check" name="btnradio" value="Not Read" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio2">Not Read</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Add Book</button>
+        </form>
+
+      <div id="library"></div>
+    </div>
+    <script src="./script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
